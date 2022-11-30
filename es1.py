@@ -83,12 +83,56 @@ for x in range(10) :
 
 import random 
 lista=[]
-for x in range(10)
+for x in range(10):
     lista.append(random.randrange(100))
-for x in lista 
-check= (x/2)int 
-     if check*2 == x 
-     print(x)
+for x in lista :
+    check= int(x/2)
+    if check*2 == x :
+        print(x)
 
+# stampa 10 nuumeri casuali riportando il numero di giri e rispettando le condizioni
+import random 
+lista=[]
+count=0
+for x in range (10):
+    r = random.randrange(100)
+    lista.append(r)
+    if r>50 or r<10:
+        print(r)
+        count=count+1
+        print(count , "questo e il mio count")
+
+
+
+#Chiedi all’utente di inserire 5 numeri e stampa i numeri man mano che vengono inseriti
+
+def ciao():
+    numeri= int(input("inserisci numero "))
+    print(numeri)
+
+for x in range(5):
+    ciao()
+
+# farlo solo con il for 
+
+for x in range(5):
+    numeri= int(input("inserisci un numero"))
+    print(numeri)
+
+#Chiedi all’utente di inserire 5 numeri e stampa i numeri in ordine inverso
+
+lista1=[]
+
+def ciao1():
+    numeri= int(input("inserisci numero "))
+    lista1.append(numeri)    
+
+for x in range(5):
+    ciao1()
+
+lista1.reverse()
+print(lista1)
+
+#Chiedi all’utente di inserire 5 numeri e stampa solo i numeri pari in ordine inverso
 
 
