@@ -135,4 +135,101 @@ print(lista1)
 
 #Chiedi all’utente di inserire 5 numeri e stampa solo i numeri pari in ordine inverso
 
+lista2=[]
+
+def ciao2():
+    numeri= int(input("inserisci numero "))
+    if numeri%2==0:
+        lista2.append(numeri)    
+
+for x in range(5):
+    ciao2()
+lista2.reverse()
+    
+print(lista2)
+
+#Chiedi all’utente quanti numeri vuole inserire. Leggi tutti i numeri in input. Stampa tutti i numeri inseriti al quadrato
+
+n_utente= int(input("quanti numeri vuoi inserire "))
+
+def quadrato():
+    numero=int(input("inserisci numero"))
+    print(numero*numero)
+for x in range (n_utente):
+    quadrato()
+
+#Definisci una funzione chiamata ‘primo’ che riceva come parametro un numero intero e ritorni true in caso il numero fosse primo
+#Chiedi all’utente di inserire un numero. Stampa “primo” nel caso si tratti di un numero primo.
+
+
+k=int(input("inserisci numero"))
+
+def primo (k):
+
+    for x in range (2,k):
+        check= int(k/x)
+        if check*2==k : 
+            return False
+    print("primo")
+    return True 
+    
+print(primo(k))
+
+
+
+#Scrivi una funzione che, data una lista di numeri in input, fornisce in output un istogramma basato su questi numeri, usando asterischi per disegnarlo.
+#Data ad esempio la lista [3, 7, 9, 5], la funzione dovrà produrre questa sequenza:
+
+n= int(input("quanti numeri vuoi inserire "))
+lista=[]
+
+def istogramma ():
+    a=int(input("inserisci"))
+    lista.append(a)
+
+for x in range(n):
+    istogramma()
+
+for y in lista :
+    print("*" * y)
+
+
+#Definisci una funzione che riceva in input un numero indefinito di parametri. Stampi solo il terzo e il quarto (se esistono)
+
+
+
+a=int(input("scegli numeri"))
+lista=[]
+
+def sbo ():
+    b=int(input("scegli numeri"))
+    lista.append(b)
+for x in range(a):
+    sbo()
+
+if a<3 :
+    print("la lista non e più lunga di due ")
+if a ==3:
+    print(lista[2])
+if a>=4: 
+    print(lista[2], lista[3])
+
+
+#Scrivi una funzione che dato in input un numero h e un carattere c stampi un albero di natale fatto di caratteri di altezza h
+h=int(input("inserisci l'altezza"))
+
+c=str(input("inserisci un carattere"))
+
+spazi= 1
+caratteri= h-spazi
+
+def albero ():
+   print(" " *(h-x-1)+ c * (2*x+1))
+
+for x in range (h):
+    albero()
+
+
+
+
 
